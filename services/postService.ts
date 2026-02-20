@@ -1,4 +1,4 @@
-import * as postController from "../controllers/postController";
+import * as postController from "../controllers/postController.js";
 
 export const postService = {
   async createNewPost(

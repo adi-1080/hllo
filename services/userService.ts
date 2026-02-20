@@ -1,4 +1,4 @@
-import * as userController from "../controllers/userController";
+import * as userController from "../controllers/userController.js";
 
 export const userService = {
     async createNewUser(name: string, email: string){

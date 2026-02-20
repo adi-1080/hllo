@@ -1,5 +1,5 @@
 import { Router, Request, Response, NextFunction } from "express";
-import { postService } from "../services/postService";
+import { postService } from "../services/postService.js";
 
 const router = Router();
 
