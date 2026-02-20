@@ -1,0 +1,13 @@
+services:
+  - type: web
+    name: hello-api
+    env: node
+    plan: free
+    buildCommand: npm install && npx prisma generate && npx prisma db push
+    startCommand: node dist/app.js
+    envVars:
+      - key: DATABASE_URL
+        scope: run_and_build
+        value: ${DATABASE_URL}
+      - key: NODE_ENV
+        value: production
